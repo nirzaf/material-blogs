@@ -203,17 +203,6 @@ more than $4,300 (Dec 27, 2021), totaling in a yearly budget of more than
 $50,000. Compared to last year, __revenue from funding has increased by 617%__
 – which is absolutely unbelievable:
 
-![Funding]
-
-  [Funding]: the-past-present-and-future/funding.png
-
-I'm solely providing these numbers to fulfill the transparency pledge I'm giving
-to my [awesome sponsors], and to show that it's possible to make existing Open
-Source projects sustainable by following a well-designed release strategy.
-
-You can learn about the strategy in the [Insiders] guide.
-
-  [awesome sponsors]: ../../insiders/index.md#how-to-become-a-sponsor
 
 ## 2022
 

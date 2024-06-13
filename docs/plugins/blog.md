@@ -1655,7 +1655,6 @@ a post. The property follows the same syntax as [`nav`][mkdocs.nav] in
     links:
       - plugins/search.md # (1)!
       - Insiders:
-        - insiders/index.md#how-to-become-a-sponsor
         - insiders/getting-started.md#requirements
     ---
 

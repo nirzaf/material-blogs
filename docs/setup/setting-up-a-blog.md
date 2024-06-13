@@ -461,7 +461,6 @@ to add related links to a post:
 date: 2024-01-31
 links:
   - plugins/search.md
-  - insiders/index.md#how-to-become-a-sponsor
 ---
 
 # Hello world!
@@ -477,7 +476,6 @@ links and even use nesting:
 date: 2024-01-31
 links:
   - plugins/search.md
-  - insiders/index.md#how-to-become-a-sponsor
   - Nested section:
     - External link: https://example.com
     - setup/setting-up-site-search.md

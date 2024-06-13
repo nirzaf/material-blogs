@@ -64,9 +64,6 @@ option to keep your [sponsorship private or to make it public], which includes
 listing your name or organization on the list of [our sponsors] and, for
 organizations, the opportunity for [logo placement].
 
-  [sponsorship private or to make it public]: privacy.md
-  [our sponsors]: our-sponsors.md
-  [logo placement]: our-sponsors.md/#our-premium-sponsors
 
 #### News and updates
 

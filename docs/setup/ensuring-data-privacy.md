@@ -203,7 +203,6 @@ For a list of all settings, please consult the [plugin documentation].
 
   [Google Fonts]: changing-the-fonts.md
   [regular font]: changing-the-fonts.md#regular-font
-  [example]: #example
   [built-in optimize plugin]: ../plugins/optimize.md
 
 ??? example "Expand to inspect example"

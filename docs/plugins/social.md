@@ -1019,12 +1019,6 @@ plugins:
       cards_layout_options:
         logo: layouts/logo.png
 ```
-
-The provided path is resolved from the root directory.
-
-  [theme.logo]: ../setup/changing-the-logo-and-icons.md#logo-image
-  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#logo-icon-bundled
-
 ---
 
 #### <!-- md:setting option.title -->

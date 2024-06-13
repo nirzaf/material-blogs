@@ -153,7 +153,6 @@ recommend using the [group] plugin.
 
 See the [getting started guide] for more information.
   [getting started guide]: getting-started.md
-  [built-in plugins]: index.md#built-in-plugins
   [group]: ../plugins/group.md
 
 ### Forking
