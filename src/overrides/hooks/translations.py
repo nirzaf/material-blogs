@@ -1,5 +1,3 @@
-
-
 import os
 import re
 
@@ -7,6 +5,7 @@ from glob import iglob
 from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.structure.pages import Page
 from urllib.parse import urlencode, urlparse
+
 
 # -----------------------------------------------------------------------------
 # Hooks
@@ -23,7 +22,7 @@ def on_page_markdown(markdown: str, *, page: Page, config: MkDocsConfig, files):
     names: dict[str, str] = {}
     known: dict[str, dict[str, str]] = {}
     for path in iglob("src/templates/partials/languages/*.html"):
-        with open(path, "r", encoding = "utf-8") as f:
+        with open(path, "r", encoding="utf-8") as f:
             data = f.read()
 
             # Extract language code and name
@@ -33,7 +32,7 @@ def on_page_markdown(markdown: str, *, page: Page, config: MkDocsConfig, files):
             # Map names and available translations
             names[code] = name
             known[code] = dict(re.findall(
-                r"^  \"([^\"]+)\": \"([^\"]*)\"(?:,|$)?", data,
+                r"^ {2}\"([^\"]+)\": \"([^\"]*)\"(?:,|$)?", data,
                 re.MULTILINE
             ))
 
@@ -67,12 +66,12 @@ def on_page_markdown(markdown: str, *, page: Page, config: MkDocsConfig, files):
 
         # Assemble GitHub issue URL
         link = urlparse(issue_url)
-        link = link._replace(query = urlencode({
+        link = link._replace(query=urlencode({
             "template": "04-add-translations.yml",
             "title": f"Update {name} translations",
             "translations": "\n".join([
                 "{% macro t(key) %}{{ {",
-                    ",\n".join(translations),
+                ",\n".join(translations),
                 "}[key] }}{% endmacro %}"
             ]),
             "country-flag": f":flag_{countries[code]}:"
@@ -89,17 +88,18 @@ def on_page_markdown(markdown: str, *, page: Page, config: MkDocsConfig, files):
 
     # Load template and render translations
     env = config.theme.get_env()
-    template = env.get_template( "hooks/translations.html")
+    template = env.get_template("hooks/translations.html")
     translations = template.module.render(
-        sorted(languages, key = lambda language: language["name"])
+        sorted(languages, key=lambda language: language["name"])
     )
 
     # Replace translation marker
     return markdown.replace(
         "<!-- hooks/translations.py -->", "\n".join(
             [line.lstrip() for line in translations.split("\n")
-        ]
-    ))
+             ]
+        ))
+
 
 # -----------------------------------------------------------------------------
 # Data
