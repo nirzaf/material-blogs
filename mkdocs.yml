@@ -27,8 +27,8 @@ site_description: >-
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: nirzaf/mkdocs-material
-repo_url: https://github.com/nirzaf/mkdocs-material
+repo_name: nirzaf/material-blogs
+repo_url: https://github.com/nirzaf/material-blogs
 
 # Copyright
 copyright: Copyright &copy; 2024 Mohamed Fazrin
