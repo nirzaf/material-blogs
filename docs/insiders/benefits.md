@@ -193,13 +193,6 @@ be used by all users.
 - [x] [Automatic light / dark mode]
 - [x] [Document contributors]
 
-  [Privacy plugin]: ../setup/ensuring-data-privacy.md#built-in-privacy-plugin
-  [Card grids]: ../reference/grids.md
-  [Tooltips]: ../reference/tooltips.md
-  [Content tabs: anchor links]: ../reference/content-tabs.md#anchor-links
-  [Automatic light / dark mode]: ../setup/changing-the-colors.md#automatic-light-dark-mode
-  [Document contributors]: ../setup/adding-a-git-repository.md#document-contributors
-
 #### $ 12,000 – Piri Piri
 
 - [x] [Blog plugin]
